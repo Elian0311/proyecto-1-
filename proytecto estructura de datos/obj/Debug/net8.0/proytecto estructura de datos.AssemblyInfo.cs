@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("proytecto estructura de datos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5904b95efbc5ee632fab7ecb98b8551a8cb9a3a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("proytecto estructura de datos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("proytecto estructura de datos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

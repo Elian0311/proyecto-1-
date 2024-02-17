@@ -158,7 +158,7 @@
             // verificar que el tipo de servicio sea correcto 
             do
             {
-                Console.Write("Número de Caja (1:Recibo de Luz    2:Recibo Teléfono 3: Recibo de Agua): ");
+                Console.Write(" tipo de servicio (1:Recibo de Luz    2:Recibo Teléfono 3: Recibo de Agua): ");
                 tipo_servicio[posicion] = Convert.ToInt32(Console.ReadLine());
 
                 if (tipo_servicio[posicion] != 1 && tipo_servicio[posicion] != 2 && tipo_servicio[posicion] != 3)
@@ -188,7 +188,7 @@
 
             // restar la comision al pago final del cliente 
 
-            monto_deducido[posicion] = monto_pagar[posicion] - montoComision[posicion];
+            monto_deducido[posicion] = monto_pagar[posicion] + montoComision[posicion];
             Console.WriteLine($" El monto deducido es: {monto_deducido[posicion]}");
 
             // Evitar que el monto final del cliente sea menor al monto deducido
@@ -201,12 +201,12 @@
                 Console.Write("Monto que cancela el cliente: ");
                 montoCliente = Convert.ToDouble(Console.ReadLine());
 
-                if (montoCliente < monto_pagar[posicion])
+                if (montoCliente < monto_deducido[posicion])
                 {
                     Console.WriteLine("El monto que cancela el cliente no puede ser menor al monto a pagar. Intente de nuevo.");
                 }
 
-            } while (montoCliente < monto_pagar[posicion]);
+            } while (montoCliente < monto_deducido[posicion]);
 
             montoPagaCliente[posicion] = montoCliente;
 
@@ -315,7 +315,7 @@
 
                 do
                 {
-                    Console.WriteLine("Número de Caja (1:Recibo de Luz    2:Recibo Teléfono 3: Recibo de Agua): ");
+                    Console.WriteLine(" tipo de servicio (1:Recibo de Luz    2:Recibo Teléfono 3: Recibo de Agua): ");
                     tipo_servicio[indiceModificar] = Convert.ToInt32(Console.ReadLine());
 
                     if (tipo_servicio[indiceModificar] != 1 && tipo_servicio[indiceModificar] != 2 && tipo_servicio[indiceModificar] != 3)
@@ -342,7 +342,7 @@
                 }
 
                 // Se calcula el monto deducido
-                monto_deducido[indiceModificar] = monto_pagar[indiceModificar] - montoComision[indiceModificar];
+                monto_deducido[indiceModificar] = monto_pagar[indiceModificar] + montoComision[indiceModificar];
 
                 // Si el número de pago a modificar existe, se mostrará este mensaje de exito que se modificó el número.
                 Console.WriteLine($" El monto deducido es: {monto_deducido[indiceModificar]}");
@@ -355,21 +355,21 @@
                     Console.Write("Monto que cancela el cliente: ");
                     montoCliente = Convert.ToDouble(Console.ReadLine());
 
-                    if (montoCliente < monto_pagar[posicion])
+                    if (montoCliente < monto_deducido[indiceModificar])
                     {
                         Console.WriteLine("El monto que cancela el cliente no puede ser menor al monto a pagar. Intente de nuevo.");
                     }
 
-                } while (montoCliente < monto_pagar[posicion]);
+                } while (montoCliente < monto_deducido[indiceModificar]);
 
-                montoPagaCliente[posicion] = montoCliente;
+                montoPagaCliente[indiceModificar] = montoCliente;
 
                 // calculamos vuelto
 
-                if (montoPagaCliente[posicion] > monto_deducido[posicion])
+                if (montoPagaCliente[indiceModificar] > monto_deducido[indiceModificar])
                 {
-                    double vuelto = montoPagaCliente[posicion] - monto_deducido[posicion];
-                    vueltoPaciente[posicion] = vuelto;
+                    double vuelto = montoPagaCliente[indiceModificar] - monto_deducido[indiceModificar];
+                    vueltoPaciente[indiceModificar] = vuelto;
                     Console.WriteLine($"El vuelto es: {vuelto}");
                     Console.WriteLine("Su pago fue realizado con exito");
                 }
