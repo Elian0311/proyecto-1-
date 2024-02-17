@@ -1,0 +1,14 @@
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.GeneratedMSBuildEditorConfig.editorconfig
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.AssemblyInfoInputs.cache
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.AssemblyInfo.cs
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.csproj.CoreCompileInputs.cache
+E:\U\proytecto estructura de datos\proytecto estructura de datos\bin\Debug\net8.0\proytecto estructura de datos.exe
+E:\U\proytecto estructura de datos\proytecto estructura de datos\bin\Debug\net8.0\proytecto estructura de datos.deps.json
+E:\U\proytecto estructura de datos\proytecto estructura de datos\bin\Debug\net8.0\proytecto estructura de datos.runtimeconfig.json
+E:\U\proytecto estructura de datos\proytecto estructura de datos\bin\Debug\net8.0\proytecto estructura de datos.dll
+E:\U\proytecto estructura de datos\proytecto estructura de datos\bin\Debug\net8.0\proytecto estructura de datos.pdb
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.dll
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\refint\proytecto estructura de datos.dll
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.pdb
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\proytecto estructura de datos.genruntimeconfig.cache
+E:\U\proytecto estructura de datos\proytecto estructura de datos\obj\Debug\net8.0\ref\proytecto estructura de datos.dll
